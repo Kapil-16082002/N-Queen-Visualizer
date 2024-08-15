@@ -136,7 +136,7 @@ class Queen {
 
     for (let i = 0; i < n; ++i) {
       await q.delay();
-      // console.log("outside:" + board);
+       //console.log("outside:" + board);
       await q.clearColor(board);
       if (await q.isValid(board, r, i, n)) {
         await q.delay();
@@ -192,7 +192,7 @@ playButton.onclick = async function visualise() {
   const para = document.createElement("p");
   para.setAttribute("class", "queen-info");
   para.innerHTML = `For ${n}x${n} board, ${
-    array[n] - 1
+    array[n]
   } arrangements are possible.`;
   arrangement.appendChild(para);
 
